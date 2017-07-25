@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Internet For Enterprise Quiz</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+  
+  <script src="scripts/jquery-2.1.3.min.js" type ="text/javascript"></script>
+  <script src ="scripts/Quiz.js" type ="text/javascript"></script>
+  
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>		
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>
+      
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+		  <li class="tab_selected"><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+    
+
+      <div id="content">
+        <!-- insert the page content here -->
+        
+		<h1>Internet For Enterprise Quiz</h1>
+
+		<form name="quiz" id="formQuiz">
+		<ol type="1" id="lstQuestions">
+			<li id="Q1">
+				What does CSS stand for?
+				<ol>
+				  <li class="lstQuiz" id="lstQ1OA"><input type="radio" name="q1" value="Colorful Style Symbols" required/> Colorful Style Symbols</li>
+				  <li class="lstQuiz" id="lstQ1OB"><input type="radio" name="q1" value="Cascading Style Sheets" /> Cascading Style Sheets</li>
+				  <li class="lstQuiz" id="lstQ1OC"><input type="radio" name="q1" value="Computer Style Symbols" /> Confidence In Applications</li>
+				  <li class="lstQuiz" id="lstQ1OC"><input type="radio" name="q1" value="Computer Style Symbols" /> Computer Style Symbols</li>
+				</ol>
+			</li>
+			
+			<li id="Q2"> What does DHTML stand for?
+				<ol>
+				  <li class="lstQuiz" id="lstQ2OA"><input type="radio" name="q2" value="Dramatic HTML" required/> Dramatic HTML</li>
+				  <li class="lstQuiz" id="lstQ2OB"><input type="radio" name="q2" value="Design HTML"/> Design HTML</li>
+				  <li class="lstQuiz" id="lstQ2OC"><input type="radio" name="q2" value="Dynamic HTML"/> Dynamic HTML</li>
+				  <li class="lstQuiz" id="lstQ2OC"><input type="radio" name="q2" value="Domain HTML"/> Domain HTML</li>
+				</ol>
+			</li>
+			
+			<li id="Q3"> Who created Javascript?
+
+				<ol >
+				  <li class="lstQuiz" id="lstQ3OA"><input type="radio" name="q3" value="Microsoft" required/> Microsoft</li>
+				  <li class="lstQuiz" id="lstQ3OB"><input type="radio" name="q3" value="Netscape" /> Netscape</li>
+				  <li class="lstQuiz" id="lstQ3OC"><input type="radio" name="q3" value="Sun Micro Systems"/> Sun Micro Systems</li>
+				  <li class="lstQuiz" id="lstQ3OC"><input type="radio" name="q3" value="Google"/> Google</li>
+				</ol>
+			</li>
+			
+			<li id="Q4"> What does CGI stand for?
+				<ol>
+				  <li class="lstQuiz" id="lstQ4OA"><input type="radio" name="q4" value="Cascading Gate Interaction" required/>  Cascading Gate Interaction</li>
+				  <li class="lstQuiz" id="lstQ4OB"><input type="radio" name="q4" value="Common GIF Interface"/> Common GIF Interface</li>
+				  <li class="lstQuiz" id="lstQ4OC"><input type="radio" name="q4" value="Common Gateway Interface"/> Common Gateway Interface</li>
+				  <li class="lstQuiz" id="lstQ4OD"><input type="radio" name="q4" value="Computer Graphics Interface"/> Computer Graphics Interface</li>
+				</ol> 
+			</li>
+			
+			<li id="Q5"> What does this Image represents for? <p><img src="images/ColorPicker.png"/></p>
+				<ol>
+				  <li class="lstQuiz" id="lstQ5OA"><input type="radio" name="q5" value="Input form" required/> Input form</li>
+				  <li class="lstQuiz" id="lstQ5OB"><input type="radio" name="q5" value="Color picker"/> Color picker</li>
+				  <li class="lstQuiz" id="lstQ5OC"><input type="radio" name="q5" value="Form Validation"/> Form Validation</li>
+				  <li class="lstQuiz" id="lstQ5OD"><input type="radio" name="q5" value="Calculator"/> Calculator</li>
+				</ol> 
+			</li>
+			
+			<li id="Q6"> Any particular HTML5 form input types must render identically in every HTML5-compliant browser.
+				<ol>
+				  <li class="lstQuiz" id="lstQ6OA"><input type="radio" name="q6" value="True" required/> True</li>
+				  <li class="lstQuiz" id="lstQ6OB"><input type="radio" name="q6" value="False"/> False</li>
+				</ol> 
+			</li>
+			
+			<li id="Q7"> The ________ attribute forces the user to enter a value before submitting the form.
+				<ol>
+				  <li class="lstQuiz" id="lstQ7OA"><input type="radio" name="q7" value="spinner control" required/> spinner control</li>
+				  <li class="lstQuiz" id="lstQ7OB"><input type="radio" name="q7" value="submit"/> submit</li>
+				  <li class="lstQuiz" id="lstQ7OC"><input type="radio" name="q7" value="required"/> required</li>
+				  <li class="lstQuiz" id="lstQ7OD"><input type="radio" name="q7" value="force"/> force</li>
+				</ol> 
+			</li>
+			
+			<li id="Q8"> Using the ________ element allows you to use external style sheets in your pages.
+				<ol>
+				  <li class="lstQuiz" id="lstQ8OA"><input type="radio" name="q8" value="ref" required/> ref</li>
+				  <li class="lstQuiz" id="lstQ8OB"><input type="radio" name="q8" value="field"/> field</li>
+				  <li class="lstQuiz" id="lstQ8OC"><input type="radio" name="q8" value="link"/> link</li>
+				  <li class="lstQuiz" id="lstQ8OD"><input type="radio" name="q8" value="attach"/> attach</li>
+				</ol> 
+			</li>
+			
+			<li id="Q9"> The = operator is called a binary operator, because it has two operands.
+				<ol>
+				  <li class="lstQuiz" id="lstQ9OA"><input type="radio" name="q9" value="True" required/> True</li>
+				  <li class="lstQuiz" id="lstQ9OB"><input type="radio" name="q9" value="False"/> False</li>
+				</ol> 
+			</li>
+			
+			<li id="Q10"> Which scripting language is used to create dynamic web pages?
+				<ol>
+				  <li class="lstQuiz" id="lstQ10OA"><input type="radio" name="q10" value="HTML" required/> HTML</li>
+				  <li class="lstQuiz" id="lstQ10B"><input type="radio" name="q10" value="Java"/> Java</li>
+				  <li class="lstQuiz" id="lstQ10C"><input type="radio" name="q10" value="JavaScript"/> JavaScript</li>
+				  <li class="lstQuiz" id="lstQ10D"><input type="radio" name="q10" value="All of the Above"/> All of the Above</li>
+				</ol> 
+			</li>
+			
+		</ol>
+		
+		<br>
+		<br>
+		<input type="hidden" id="quizId" value="ie_quiz"/>
+		
+		<input type="submit" id ="getScoreButton" class="submit" name="submit" value="Get Score" onclick="myFunction(); return false;"/>
+		<input type="reset" id="retryButton" class="submit" value="Clear Answers" onclick="resetForm();"/>
+		
+		<br/><br/><br/>
+		</form>
+		<div id="Result"></div>
+      </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

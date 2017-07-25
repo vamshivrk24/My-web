@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Computer Network Management - Course</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>		
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>        
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li class="tab_selected"><a href="courses.html" >Courses</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Computer Network Management:</h1>
+       	<h1>Chapter 2</h1>
+		<h2>Network Devices</h2>
+
+      <p><br><br>
+	•	Repeaters:<br>
+		The number of nodes on a network and the length of cable used influence the quality of communication on the network.<br>
+		Attenuation: The degradation of signal clarity.<br>
+		<b>Repeaters</b> work against attenuation by repeating signals that they receive on a network, typically cleaning and regenerating the digital transmission in the process.<br>
+	•	Hubs:<br>
+		A <b>Hub</b> is a generic connection device used to tie several networking cables together to create a link between different stations on a network.<br>
+		<b>Active hubs</b> amplify or repeat signals that pass through them.<br>
+		<b>Passive hub</b> merely connects cables on a network and provides no signal regeneration.<br>
+		<b>Topology</b> refers to the physical layout of network cable and devices.<br>
+		<b>Advantages</b><br>
+		-Can extend a network’s total distance<br>
+		-Do not seriously affect network performance<br>
+		-Certain repeaters can connect networks using different physical media<br>
+		<b>Disadvantages</b><br>
+		-Cannot connect different network architectures, such as Token Ring and Ethernet<br>
+		-Do not reduce network traffic<br>
+		-They repeat everything they receive<br>
+		-Do not segment the network<br>
+		-Do not reformat data structures<br>
+	•	Wireless Network Components:<br>
+		In "Ad hoc mode"-<br> 
+		Wireless clients can connect and communicate directly with each other & there is no access point.<br>
+		In "Infrastructure mode"-<br>
+		Wireless clients attach wirelessly to an access point which involves the access point wired back into a switch.<br>
+		Basic Service Set (BSS)-<br>
+		When a single access point is available in infrastructure mode.<br>
+		Extended Service Set (ESS)-<br>
+		Involve multiple access points connected to various switches in the network.<br>
+	•	Network Segmentation:<br>
+		<b>Segmentation</b> is the breaking down of a single heavily populated network segment into smaller segments, or collision domains, populated by fewer nodes.<br>
+		<b>Segment</b> is part of a network that is divided logically or physically from the rest of the network.<br>
+		When network administrators place too many nodes on the same network segment it causes the number of collisions to increase.<br>
+	•	Bridges:<br>
+		-Operate at the Data Link layer of the OSI model.<br>
+		-Filter traffic between network segments by examining the destination MAC address.<br>
+		-Based on the destination MAC address, the bridge either forwards or discards the frame.<br>
+		-Reduce network traffic by keeping local traffic on the local segment.<br>
+		<b>Advantages</b><br>
+		-Can extend a network by acting as a repeater<br>
+		-Can reduce network traffic on a segment by subdividing network communications<br>
+		-Increase the available bandwidth to individual nodes because fewer nodes share a collision domain<br>
+		-Reduce collisions<br>
+		-Some bridges connect networks using different media types and architectures<br>
+		<b>Disadvantages</b><br>
+		-Slower than repeaters and hubs<br>
+		-Extra processing by viewing MAC addresses<br>
+		-Forward broadcast frames indiscriminately, so they do not filter broadcast traffic<br>
+		-More expensive than repeaters and hubs<br>
+		<b>Broadcast storm</b><br>
+		-When two or more stations engage in the transmission of excessive broadcast traffic<br>
+	•	Switches:<br>
+		<b>Switches</b> operates at the Data Link layer of the OSI model<br>
+		Increase network performance by reducing the number of frames transmitted to the rest of the network<br>
+		Switch opens a virtual circuit between the source and the destination<br>
+		Prevents communications between just two computers from being broadcast to every computer on the network or segment called <b>microsegmentation</b>.<br>
+		<b>Advantages</b><br>
+		-Switches increase available network bandwidth<br>
+		-Switches reduce the workload on individual computers<br>
+		-Switches increase network performance<br>
+		-Networks that include switches experience fewer frame collisions because switches create collision domains for each connection (a process called microsegmentation)<br>
+		-Switches connect directly to workstations<br>
+		<b>Disadvantages</b><br>
+		-Switches are significantly more expensive than bridges<br>
+		-Network connectivity problems can be difficult to trace through a switch<br>
+		-Broadcast traffic may be troublesome<br>
+	•	Routers:<br>
+		<b>Routers</b> operates at the Network layer of the OSI model.<br>
+		They provide filtering and network traffic control on LANs and WANs and can connect multiple segments and multiple networks<br>
+		<b>Internetworks</b><br>
+		-Networks connected by multiple routers<br>
+		-Similar to switches and bridges in that they segment a network and filter traffic<br>
+		-Routers use the logical address<br>
+		<b>Advantages</b><br>
+		-Can connect different network architectures, such as Ethernet and Token Ring<br>
+		-Can choose the best path across an internetwork using dynamic routing techniques<br>
+		-Reduce network traffic by creating collision domains<br>
+		-Reduce network traffic by creating broadcast domains<br>
+		<b>Disadvantages</b><br>
+		-Routers work only with routable network protocols; most but not all protocols are routable<br>
+		-Routers are more expensive than other devices<br>
+		-Dynamic router communications (inter-router communication) cause additional network overhead, which results in less bandwidth for user data<br>
+		-Routers are slower than other devices because they must analyze a data transmission from the Physical through the Network layer<br>
+	•	Gateway:<br>
+		-Usually a combination of hardware and software<br>
+		-Translates between different protocol suites<br>
+		-Has the most negative effect on network performance<br>
+		-Packets must be rebuilt not just at the lower levels but at the very upper levels<br>
+		-So that actual data content can be converted into a format the destination can process<br>
+		-Creates the most latency<br>
+	•	Half-duplex communications<br>
+		Devices can send and receive signals, but not at the same time<br>
+	•	Full-duplex communications<br>
+		Devices can send and receive signals simultaneously<br>
+		Most Ethernet networks can use equipment that supports half- and full-duplex communications<br>
+		Full-duplex communications use one set of wires to send and a separate set to receive<br>
+
+
+	
+
+	  <br><br><br></p>
+	  <a href ="cn_course.html"><input type="button" class="submit" name="submit" value="Back to Chapters" /></a>
+	  </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

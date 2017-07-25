@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Computer Networkk Management - Course</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>		
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>        
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li class="tab_selected"><a href="courses.html" >Courses</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Computer Network Management:</h1>
+       	<h1>Chapter 4</h1>
+		<h2>IP Addressing</h2>
+
+      <p><br><br>
+	•	IP Addressing<br>
+		<p>An IP address has 32 bits divided into four octets (four sets of eight binary digits). To make the address easier to read, people use decimal numbers to represent the binary digits. For example,the IP address 192.168.1.1 is 11000000.10101000.00000001.00000001 when written in binary. Notice that 32 binary digits create the address. The lowest number of any octet is 00000000, or zero, and the highest number of any octet is 11111111, or 255. When binary IP addresses are written in decimal format, it is often called dotted decimal notation.</p>
+	•	MAC to IP Address Comparison<br>
+		<p>The MAC address identifies a specific NIC in a computer on a network, so each MAC address is unique. TCP/IP networks can use MAC addresses in communication. However, network devices could not efficiently route traffic on a large internetwork or on the Internet using MAC addresses; MAC addresses are not grouped logically, they cannot be modified, and they do not give information about physical or logical network configuration. Therefore, another addressing scheme called IP addressing was devised for use on large networks. Unlike MAC addresses, IP addresses have a hierarchical structure and do provide logical groupings. The structure of the IP address makes packet routing possible on large internetworks. You can compare driver’s license numbers to MAC addresses. The license allows you to drive a car, and it uniquely identifies you as a vehicle operator. However, when people want to talk with you, they do not call your driver’s license number. Instead, they call your phone number, which identifies your location with an area code and other digits specific to you. Similarly, IP addresses identify your computer and the specific network on which it resides. For example, if your IP address is 192.168.1.3, your computer is host 3 on network 192.168.1.0.</p>
+	  
+	•	IP Classes<br>
+		<p>The Internet Assigned Numbers Authority (IANA) devised the hierarchical IP addressing structure, and the American Registry of Internet Numbers (ARIN) manages IP addresses in the United States. These organizations work in conjunction with the Internet Corporation for Assigned Names and Numbers (ICANN), which is a global, government-independent entity with overall responsibility for the Internet. ICANN has effectively replaced IANA.</p>  
+		<b>Class A</b><br>
+		<p>ARIN reserves Class A IP addresses for governments and large corporations throughout the world. Class A addresses, when written in binary format, will always begin with a zero. You can tell what class an Internet address belongs to by looking at its first octet. For example, Class A addresses in decimal notation will have 1 to 126 as their first octet.</p>
+		<b>Class B</b><br>
+		<p>Class B IP addresses are assigned to large- and medium-sized companies. The IANA specifies that Class B addresses will lead with 10 when written in binary format. This means that the range in decimal notation for the first octet of Class B addresses is 128 through 191.</p>
+		<b>Class C</b><br>
+		<p>Class C IP addresses are assigned to groups that do not meet the qualifications to obtain Class A or B addresses. The IANA specified that the first three binary digits of a Class C address must be 110, which means that Class C addresses can range from 192 through 223 in decimal notation.</p>
+		<b>Class D</b><br>
+		<p>Class D addresses (also known as multicast addresses) are reserved for multicasting. Multicasting is the sending of a stream of data (usually audio and video) to multiple computers simultaneously. Compared to broadcasting, this saves bandwidth. Many routers forward multicasts, and computers configured to receive the multicast information accept the packets and can receive the data stream. Because Class D addresses must have 1110 as their first four binary digits, the range for Class D starts with decimal 224 and ends at 239 in the first octet.</p>
+		<b>Class E</b><br>
+		<p>Class E The IANA reserved Class E addresses for research, testing, and experimentation. The Class E range starts where Class D leaves off. Figure 4-5 illustrates the first address in the “experimental” range as 240. The top of the range is 255, which is the highest possible 8-bit number. Therefore, Class E defines 240 to 255 (decimal) as the first octet.</p>
+	•	Network Addressing<br>
+		<p>On every TCP/IP network, hosts must have both an IP address and a subnet mask. The subnet mask indicates how much of the IP address represents the network or subnet (short for subnetwork).
+		Standard (default) subnet masks are as follows:<br>
+		• Class A subnet mask is 255.0.0.0 or 11111111.00000000.00000000.00000000<br>
+		• Class B subnet mask is 255.255.0.0 or 11111111.11111111.00000000.00000000<br>
+		• Class C subnet mask is 255.255.255.0 or 11111111.11111111.11111111.00000000</p>
+	•	Subnet Address<br>
+		<p>If you look at the preceding network and host number divisions, you will notice that the network is identified by the first, or first few, octets. Notice that after the masked portion of the subnet mask, the network identifier changes to zero(s). For example, the network identifier of a host that has IP address 192.168.23.45 with subnet mask 255.255.255.0 is 192.168.23.0. One of the IP networking rules stipulates that a TCP/IP host must have a nonzero host identifier. From this information, you can determine that on a subnet using mask 255.255.255.0, the IP address 222.12.150.4 is a valid host IP address. However, the address 222.12.150.0 is not a host address, but a network identifier. In other words, you could not assign 222.12.150.0 to a computer.</p>
+	•	Broadcast Address<br>
+		<p>IP addressing has another rule that you must commit to memory. On any subnet, when the entire host portion of an IP address is all binary ones, it is a broadcast to all of the computers on that segment. For example, on subnet 192.168.1.0, the IP address 192.168.1.255 is a broadcast. This also can apply to larger subnetworks such as 190.55.0.0; the IP address 190.55.255.255 is a broadcast on that network. Converting these addresses into binary digits can quickly show if an IP address is a broadcast. If all the binary digits in the host identifier are ones, the address is a broadcast. Figure 4-7 illustrates a broadcast address for a subnet.</p>
+	•	Subnet Masking<br>
+		<p>When network administrators create subnets, they borrow bits from the original host field to make a set of subnetworks. The number of borrowed bits determines how many subnetworks and hosts will be available. Whenever you subnet a network address, you lose some of the host addresses that you could have had without the subnetting. For instance, in the example from the previous section, the network administrator divided the Class B address 190.45.0.0 by masking the third octet. You know from the previous section that Class B addresses support 65,534 hosts. However, masking the third octet allows room for only 254 subnetworks, each containing 254 hosts.</p>
+	  
+	  <br><br></p>
+	  <a href ="cn_course.html"><input type="button" class="submit" name="submit" value="Back to Chapters" /></a>
+	  </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

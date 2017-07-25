@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Internet for the Enterprise - Course</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li class="tab_selected"><a href="courses.html" >Courses</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Internet for the Enterprise</h1>
+       	<h1>Chapter 4</h1>
+		<h2>Introduction to CSS: Part 1</h2>
+
+      <p><br><br>
+		<p>W3C technology called <b>Cascading Style Sheets 3 (CSS3)</b> allows you to specify the presentation of elements on a web page (e.g., fonts, spacing, sizes, colors, positioning) separately from the document's structure and content (section headers, body text, links, etc.). This separation of structure from presentation simplifies maintaining and modifying web pages, especially on large-scale websites.</p>
+		<p>Inline Styles<br>
+		You can declare document styles inline in the HTML5 markup, in embedded style sheets or in separate CSS files. This section presents inline styles that declare an individual element's format using theHTML5 attribute style. Inline styles override any other styles applied using the techniques</p><br>
+		<p>Embedded Style Sheets<br>
+		A second technique for using style sheets is embedded style sheets, which enable you to embed a CSS3 document in an HTML5 document's head section.</p><br>
+		<p>The style Element and MIME Types<br>
+		The style element defines the embedded style sheet. Styles placed in the head apply to matching elements wherever they appear in the body. The style element's type attribute specifies the MIME (Multipurpose InternetMail Extensions) type that describes the style element's content. CSS documents use the MIME type text/css. As of HTML5, the default type for a style element is "text/css", so this attribute is no longer needed-we kept it here because you'll see this used in legacy HTML code.</p><br>
+		<p>font-family Property<br>
+		The font-family property specifies the name of the font to use. Not all users have the same fonts installed on their computers, so CSS allows you to specify a comma-separated list of fonts to use for a particular style. The browser attempts to use the fonts in the order in which they appear in the list. It's advisable to end a font list with a generic font family name in case the other fonts are not installed on the user's computer</p><br>
+		<p>font-size Property<br>
+		Property font-size specifies a 12-point font. Other possible measurements in addition to pt (point). Relative values-xx-small, x-small, small, smaller, medium, large, larger, x-large and xx-large-also can be used. Generally, relative font-size values are preferred over points, because an author does not know the specific measurements of each client's display. Relative values permit more flexible viewing of web pages. For example, users can change font sizes the browser displays for readability</p><br>
+		<p>Conflicting Styles<br>
+		Styles may be defined by a user, an author or a user agent. A user is a person viewing your web page, you're the author-the person who writes the document-and the user agent is the program used to render and display the document (e.g., a web browser).<br>
+		• Styles cascade (and hence the term "Cascading Style Sheets"), or flow together, such that the ultimate appearance of elements on a page results from combining styles defined in several ways.<br>
+		• Styles defined by the user take precedence over styles defined by the user agent.<br>
+		• Styles defined by authors take precedence over styles defined by the user.<br>
+		Most styles defined for parent elements are also inherited by child (nested) elements. This makes sense for most styles, such as font properties, but there are certain properties that you don't want to be inherited.</p><br>
+		<p>Linking External Style Sheets<br>
+		Style sheets are a convenient way to create a document with a uniform theme. With external style sheets (i.e., separate documents that contain only CSS rules), you can provide a uniform look and feel to an entire website (or to a portion of one). You can also reuse the same external style sheet across multiple websites. Different pages on a site can all use the same style sheet.When changes to the styles are required, you need to modify only a single CSS file to make style changes across all the pages that use those styles. This concept is sometimes known as skinning. While embedded style sheets separate content from presentation, both are still contained in a single file, preventing a web designer and a content author from conveniently working in parallel. External style sheets solve this problem by separating the content and style into separate files.</p><br>
+		<p>Backgrounds<br>
+		CSS provides control over the backgrounds of block-level elements. CSS can set a background color or add background images to HTML5 elements. This logo stays fixed in the corner even when the user scrolls up or down the screen.</p><br>
+		<p>background-image Property<br>
+		The background-image property specifies the image URL for the image logo.png in the format url(fileLocation). You can also set the background-color property in case the image is not found (and to fill in areas the image does not cover).</p><br>
+		<p>Media Types and Media Queries<br>
+		<b>CSS media types</b> allow you to decide what a page should look like, depending on the kind of media being used to display the page. The most common media type for a web page is the screen media type, which is a standard computer screen. Other media types in CSS include handheld, braille, speech and print. The handheld medium is designed for mobile Internet devices such as smartphones, while braille is for machines that can read or print web pages in braille.<br>
+		<b>Media Queries</b><br>
+		Media queries allow you to format your content to specific output devices. Media queries include a media type and expressions that check the media features of the output device. Some of the common media features include:<br>
+		• width:-the width of the part of the screen on which the document is rendered, including any scrollbars<br>
+		• height:-the height of the part of the screen on which the document is rendered, including any scrollbars<br>
+		• device-width:-the width of the screen of the output device<br>
+		• device-height:-the height of the screen of the output device<br>
+		• orientation:-if the height is greater than the width, orientation is portrait, and if the width is greater than the height, orientation is landscape<br>
+		• aspect-ratio:-the ratio of width to height<br>
+		• device-aspect-ratio:-the ratio of device-width to device-height</p>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	  <br><br><br></p>
+	  <a href ="ie_course.html"><input type="button" class="submit" name="submit" value="Back to Chapters" /></a>
+	  </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Internet for the Enterprise - Course</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li class="tab_selected"><a href="courses.html" >Courses</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Internet for the Enterprise :</h1>
+       	<h1>Chapter 2</h1>
+		<h2>Introduction to HTML 5: Part 1</h2>
+
+      <p><br><br>
+		<p><b>HTML5</b> is a markup language that specifies the structure and content of documents that are displayed in web browsers.<br>
+		We introduce some basics, then cover more sophisticated HTML5 techniques such as:<br>
+		• tables, which are particularly useful for structuring information from databases
+		(i.e., software that stores structured sets of data)<br>
+		• forms for collecting information from web-page visitors<br>
+		• internal linking for easier page navigation<br>
+		• meta elements for specifying information about a document</p><br>
+		Editing HTML5<br>
+		<p>We'll create HTML5 documents by typing HTML5 markup text in a text editor (such as Notepad, TextEdit, vi, emacs) and saving it with the .html or .htm filename extension.<br>
+		Computers called web servers storeHTML5 documents. Clients (such as web browsers running on your local computer or smartphone) request specific resources such as HTML5 documents from web servers.</p><br>
+		Document Type Declaration
+		<p>The document type declaration (DOCTYPE) is required in HTML5 documents so that browsers render the page in standards mode, according to the HTML and CSS specifications.<br>
+		Some browsers operate in quirks mode to maintain backward compatibility with web pages that are not up-to-date with the latest standards. You'll include the DOCTYPE in each HTML5 document you create.</p><br>
+		Blank Lines<br>
+		<p>We include blank lines to make our documents easier to read-the browser ignores them.</p><br>
+		Comments<br>
+		<p>You'll insert comments in your HTML5 markup to improve readability and describe the content of a document. The browser ignores comments when your document is rendered. HTML5 comments start with < !-- and end with -->. We include in our examples comments that specify the figure number and file name and state the example's purpose. We'll often include additional comments, especially to explain new features.</p><br>
+		html, head and body Elements<br>
+		<p>HTML5 markup contains text (and images, graphics, animations, audios and videos) that represents the content of a document and elements that specify a document's structure and meaning. Some important elements are the html element, the head element and the body element. The html element encloses the head section (represented by the head element) and the body section (represented by the body element).<br> 
+		The head section contains information about the HTML5 document, such as the character set (UTF-8, the most popular character-encoding scheme for the web) that the page uses-which helps the browser determine how to render the content-and the title. The head section also can contain special document-formatting instructions called CSS3 style sheets and client-side programs called scripts for creating dynamic web pages.<br>
+		The body section contains the page's content, which the browser displays when the user visits the web page.</p><br>
+		Start Tags and End Tags<br>
+		<p>HTML5 documents delimit most elements with a start tag and an end tag. A start tag consists of the element name in angle brackets. An end tag consists of the element name preceded by a forward slash (/) in angle brackets. There are several so-called "void elements" that do not have end tags.<br>
+		As you'll soon see, many start tags have attributes that provide additional information about an element, which browsers use to determine how to process the element. Each attribute has a name and a value separated by an equals sign (=).</p><br>
+		title Element<br>
+		<p>It is called a nested element, because it's enclosed in the head element's start and end tags. The head element is also a nested element, because it's enclosed in the html element's start and end tags. The title element describes the web page. Titles usually appear in the title bar at the top of the browser window, in the browser tab on which the page is displayed, and also as the text identifying a page when users add the page to their list of Favorites or Bookmarks, enabling them to return to their favorite sites. Search engines use the title for indexing purposes and when displaying results.</p><br>
+		Paragraph Element<br>
+		<p>Some elements, such as the paragraph element denoted with < p > and < / p>, help define the structure of a document. All the text placed between the < p > and < / p > tags.</p><br>
+		
+		
+		
+		
+		
+		
+		
+	  <br><br><br></p>
+	  <a href ="ie_course.html"><input type="button" class="submit" name="submit" value="Back to Chapters" /></a>
+	  </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

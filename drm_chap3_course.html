@@ -1,0 +1,70 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Resource Management - Course</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li class="tab_selected"><a href="courses.html" >Courses</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Data Resource Management:</h1>
+       	<h1>Chapter 3</h1>
+		<h2><b>PL/SQL BLOCKS</b></h2>
+
+      <p><br>
+		      The PL stands for Procedural Language. It is used by Oracle client software to manipulate database data.  A PL/SQL program combines SQL queries with procedure commands for tasks such as manipulating variable values, evaluating IF/THEN decision control structures, and creating loop structures that repeat instructions. PL/SQL interfaces directly with Oracle database and can be stored directly in the database.
+		 <br><br>PL/SQL programs can be executed in Oracle SQL*Plus, SQL Developer or Forms Builder. PL/SQL is an interpreted language, which means that a program called the PL/SQL interpreter checks each command for syntax errors, translates each command into machine language, and then execute each command, one command at a time.
+		 With PL/SQL, an entire block of statements can be sent to Oracle at one time.<br>
+		 <br>PL/SQL programs are structured in blocks and generally contain three sections: declaration, body and exception.</dt>
+		<br><br><b>Syntax :</b>
+		<ul><dl><dt>
+		<p><img src="images/block types.png" title="block types.png"></p></dl></ul>
+		 In a PL/SQL program block, the DECLARE and EXCEPTION sections are optional. The declare part is where variables are declared. All used variables must be declared in this section.  The exception section is where we place error handling code.  The body part is where your programs shall be placed. Here, you can have IF statements, loops, etc. The end signifies the end of this program block.<br>
+<br>
+		<ul><dl><dt> <b>Scalar Variables: variables with single value such as number, date or character.</b></dt>
+		<br> <li>	Varchar 2, Char, Date, Interval, Number, Binary_Interger, Interger, Int, Smallint, Dec, Decimal, Double Precision, Numeric, Real, Boolean, LOB Data Type</li>
+
+		<br> <dt><b>Data Conversion Functions</b></dt>
+		<br><dd><li> To_Date, To_Number, To_Char</li></dd><br>
+
+		 <dt><b>SQL commands can be used in PL/SQL</b></dt><br>
+		 <li>	<b>DML:</b> SELECT, INSERT, UPDATE, DELETE</li>
+		 <li><b>Transaction Control:</b> COMMIT, ROLLBACK, SAVEPOINT</li></dl></ul>
+
+</p>
+	  <a href ="drm_course.html"><input type="button" class="submit" name="submit" value="Back to Chapters" /></a>
+	  </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

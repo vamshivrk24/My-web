@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Resource Management - Course</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li class="tab_selected"><a href="courses.html" >Courses</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Data Resource Management:</h1>
+       	<h1>Chapter 5</h1>
+		<h2><b>PACKAGES AND TRIGGERS</b></h2>
+
+      <p><br>
+		<b> Package: </b><br>
+		<ul><dl><dt> <dd>A package is a group of related procedures and functions, togather with the cursors and variables they use, stored together in the database for continued use as a unit. A package is compiled and stored in the database.
+		 A package is created as package specification and package body.</dd></dt>
+		 <br>Syntax:<br><br>
+		 CREATE PACKAGE name AS  specification (visible part)
+		 <br>public type and object declarations   subprogram specifications
+		 <br>END [name];<br><br>
+
+		 CREATE PACKAGE BODY name AS  body (hidden part)<br>
+		 private type and object declarations   subprogram bodies
+		 <br>[BEGIN  initialization statements]<br>
+		 END [name]; </dl></ul>
+
+	<b>  Trigger:</b><br>
+		 	<ul><dl><dt><dd><br>A trigger is a named program unit that is stored in the database and fired (executed) in response to a specified event.
+		 	The specified event is associated with either a table, a view, a schema, or the database, and it is one of the following:</dd></dt><br>
+		 	<li>	A database manipulation (DML) statement (DELETE, INSERT, or UPDATE)</li>
+			<li>A database definition (DDL) statement (CREATE, ALTER, or DROP)</li>
+			<li>A database operation (SERVERERROR, LOGON, LOGOFF, STARTUP, or SHUTDOWN)</li>
+
+		 	<li>You can use :OLD to refer to the values in the row before change and </li> <li>:NEW to refer to the  values in the changed row.</li>  You can only use these two attributes within PL/SQL code.
+	<br>	<br> Syntax:<br>
+		 <br>CREATE  TRIGGER trigger_name
+		 <br> {BEFORE | AFTER} {INSERT | DELETE | UPDATE [of <column1> ]}
+		 <br> ON table_name [FOR EACH ROW] | [FOR EACH STATEMENT]</dl></ul>
+
+	  </p>
+	  <a href ="drm_course.html"><input type="button" class="submit" name="submit" value="Back to Chapters" /></a>
+	  </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

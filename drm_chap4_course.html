@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Resource Management - Course</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li class="tab_selected"><a href="courses.html" >Courses</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Data Resource Management:</h1>
+       	<h1>Chapter 4</h1>
+		<h2><b>PROCEDURES AND CURSORS</b></h2>
+
+      <p><br>
+		<b>  Procedure:</b></dt><br>
+		 <ul><dl><dt> 	<dd>A named group of SQL statements that have been pre-created and stored in the server database, Stored procedures accept input parameters. Each parameter has three parts: parameter name, direction, and data type.</dd>
+		  <br>Syntax :<br><br>
+		  CREATE PROCEDURE procedure_name (parameter 1, parameter 2, ..)    IS/AS <br>
+		  BEGIN     SQL statement <br>
+		  [EXCEPTION    Exception_section] <br>
+		  END;<br><br>
+		  To Execute or call a stored procedure:   <ol>  1) EXEC procedure_name ();   <br>   2)  EXECUTE procedure_name ();<br>
+		  3)  CALL procedure_name ();</ol></dl></ul>
+
+		  <b> Cursor:</b></dt><br><br>
+		<ul><dl><dt> <dd> In Oracle, a cursor is a pointer to a memory location on the database server that the DBMS uses to process a SQL query. In PL/SQL programs, you can use cursors to retrieve and manipulate data.
+		 There are two types of cursors: implicit and explicit</dd>
+		  <br><li>Implicit cursor is used, the Database Management System (DBMS) will perform the open, fetch and close operations automatically. Implicit cursors should be used only with SQL statements that return a single row.</li>
+		  Syntax:<br><br>
+		  DECLARE  CURSOR  Cursor_name  IS SELECT  *   FROM  Table_Name  <br>WHERE Column_name=xyz;
+		  <br><br><li>Explicit cursors are queries defined using a name.
+		  An explicit cursor can be thought of as a pointer to a set of records and the pointer can be moved forward within the set of records. Explicit cursors provide the user the complete control over opening, closing and fetching data.
+		  Also, multiple rows can be fetched using an explicit cursor.</li>
+		  Syntax:  <br> <br>OPEN cursor_name; <br>	FETCH cursor_name INTO record_name;<br>
+		  CLOSE cursor_name;<br><br>
+		  <li>The variables must be declared before being used (tablename.columnname%TYPE )</li>
+		  <li>%TYPE data type is often used to display a single column value.</li>
+		  <li> %ROWTYPE is used to display multiple column values.</li></dl></ul>
+
+</p>
+	  <a href ="drm_course.html"><input type="button" class="submit" name="submit" value="Back to Chapters" /></a>
+	  </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

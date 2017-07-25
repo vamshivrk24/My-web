@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Management Information Systems Quiz</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+  
+  <script src="scripts/jquery-2.1.3.min.js" type ="text/javascript"></script>
+  <script src ="scripts/Quiz.js" type ="text/javascript"></script>
+  
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>		
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>
+      
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+		  <li class="tab_selected"><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+    
+
+      <div id="content">
+        <!-- insert the page content here -->
+        
+		<h1>Management Information Systems Quiz</h1>
+
+		<form name="quiz" id="formQuiz">
+		<ol type="1" id="lstQuestions">
+			<li id="Q1">
+				CIA is known as:
+				<ol>
+				  <li class="lstQuiz" id="lstQ1OA"><input type="radio" name="q1" value="Confidentiality, Integrity, and Availability" required/> Confidentiality, Integrity, and Availability</li>
+				  <li class="lstQuiz" id="lstQ1OB"><input type="radio" name="q1" value="Computers, Information, and Assets" /> Computers, Information, and Assets</li>
+				  <li class="lstQuiz" id="lstQ1OC"><input type="radio" name="q1" value="Confidence In Applications" /> Confidence In Applications</li>
+				  <li class="lstQuiz" id="lstQ1OC"><input type="radio" name="q1" value="Controls, Integrity, and Availability" /> Controls, Integrity, and Availability</li>
+				</ol>
+			</li>
+			
+			<li id="Q2"> The statement, “Information systems should be configured to require strong passwords,” is an example of a/an:
+				<ol>
+				  <li class="lstQuiz" id="lstQ2OA"><input type="radio" name="q2" value="Security requirement " required/> Security requirement </li>
+				  <li class="lstQuiz" id="lstQ2OB"><input type="radio" name="q2" value="Security policy"/> Security policy</li>
+				  <li class="lstQuiz" id="lstQ2OC"><input type="radio" name="q2" value="Security objective"/> Security objective</li>
+				  <li class="lstQuiz" id="lstQ2OC"><input type="radio" name="q2" value="Security control"/> Security control</li>
+				</ol>
+			</li>
+			
+			<li id="Q3"> When an information system authenticates a user based on “what the user is,” this refers to the use of:
+
+				<ol >
+				  <li class="lstQuiz" id="lstQ3OA"><input type="radio" name="q3" value="Authorization based upon the user’s job title" required/> Authorization based upon the user’s job title</li>
+				  <li class="lstQuiz" id="lstQ3OB"><input type="radio" name="q3" value="Role-based authentication" /> Role-based authentication</li>
+				  <li class="lstQuiz" id="lstQ3OC"><input type="radio" name="q3" value="Two-factor authentication"/> Two-factor authentication</li>
+				  <li class="lstQuiz" id="lstQ3OC"><input type="radio" name="q3" value="Biometric authentication"/> Biometric authentication</li>
+				</ol>
+			</li>
+			
+			<li id="Q4"> The categories of controls are:
+				<ol>
+				  <li class="lstQuiz" id="lstQ4OA"><input type="radio" name="q4" value="Detective, deterrent, preventive, corrective, recovery, and compensating" required/>  Detective, deterrent, preventive, corrective, recovery, and compensating</li>
+				  <li class="lstQuiz" id="lstQ4OB"><input type="radio" name="q4" value="Detective, preventive, and deterrent"/> Detective, preventive, and deterrent</li>
+				  <li class="lstQuiz" id="lstQ4OC"><input type="radio" name="q4" value="Technical, logical, and physical"/> Technical, logical, and physical</li>
+				  <li class="lstQuiz" id="lstQ4OC"><input type="radio" name="q4" value="Detective, preventive recovery, and compensating"/> Detective, preventive recovery, and compensating</li>
+				</ol> 
+			</li>
+
+			<li id="Q5"> Rootkits can be difficult to detect because:
+				<ol>
+				  <li class="lstQuiz" id="lstQ5OA"><input type="radio" name="q5" value="They are encrypted" required/>  They are encrypted</li>
+				  <li class="lstQuiz" id="lstQ5OB"><input type="radio" name="q5" value="They are polymorphic"/> They are polymorphic</li>
+				  <li class="lstQuiz" id="lstQ5OC"><input type="radio" name="q5" value="They reside in ROM instead of the hard drive"/> They reside in ROM instead of the hard drive</li>
+				  <li class="lstQuiz" id="lstQ5OC"><input type="radio" name="q5" value="They use techniques to hide themselves"/> They use techniques to hide themselves</li>
+				</ol> 
+			</li>
+			
+			<li id="Q6"> An attack on a DNS server to implant forged “A” records is characteristic of a: 
+				<ol>
+				  <li class="lstQuiz" id="lstQ6OA"><input type="radio" name="q6" value="Pharming attack" required/>  Pharming attack</li>
+				  <li class="lstQuiz" id="lstQ6OB"><input type="radio" name="q6" value="Phishing attack"/> Phishing attack</li>
+				  <li class="lstQuiz" id="lstQ6OC"><input type="radio" name="q6" value="Whaling attack"/> Whaling attack</li>
+				  <li class="lstQuiz" id="lstQ6OC"><input type="radio" name="q6" value="Spim attack"/> Spim attack</li>
+				</ol> 
+			</li>			
+
+			<li id="Q7"> The types of BCP and DRP tests are:
+				<ol>
+				  <li class="lstQuiz" id="lstQ7OA"><input type="radio" name="q7" value="Document review, walkthrough, parallel test, cutover test" required/> Document review, walkthrough, parallel test, cutover test</li>
+				  <li class="lstQuiz" id="lstQ7OB"><input type="radio" name="q7" value="Document review, walkthrough, simulation, parallel test, cutovertest "/> Document review, walkthrough, simulation, parallel test, cutovertest </li>
+				  <li class="lstQuiz" id="lstQ7OC"><input type="radio" name="q7" value="Document review, walkthrough, sanity test, parallel test, cutover test"/>  Document review, walkthrough, sanity test, parallel test, cutover test</li>
+				  <li class="lstQuiz" id="lstQ7OC"><input type="radio" name="q7" value="Walkthrough, simulation, parallel test, cutover test, live test"/> Walkthrough, simulation, parallel test, cutover test, live test</li>
+				</ol> 
+			</li>
+
+			<li id="Q8"> The activity that is concerned with the continuation of business operations is:
+				<ol>
+				  <li class="lstQuiz" id="lstQ8OA"><input type="radio" name="q8" value="Emergency Response Procedures" required/>  Emergency Response Procedures</li>
+				  <li class="lstQuiz" id="lstQ8OB"><input type="radio" name="q8" value="Disaster Recovery Planning"/> Disaster Recovery Planning</li>
+				  <li class="lstQuiz" id="lstQ8OC"><input type="radio" name="q8" value="Business Continuity Planning"/> Business Continuity Planning</li>
+				  <li class="lstQuiz" id="lstQ8OC"><input type="radio" name="q8" value="Business Impact Analysis"/> Business Impact Analysis</li>
+				</ol> 
+			</li>
+
+			<li id="Q9"> Public key cryptography is another name for::
+				<ol>
+				  <li class="lstQuiz" id="lstQ9OA"><input type="radio" name="q9" value="Secure Sockets Layer" required/>  Secure Sockets Layer</li>
+				  <li class="lstQuiz" id="lstQ9OB"><input type="radio" name="q9" value="Asymmetric cryptography"/> Asymmetric cryptography</li>
+				  <li class="lstQuiz" id="lstQ9OC"><input type="radio" name="q9" value="Symmetric key cryptography"/> Symmetric key cryptography</li>
+				  <li class="lstQuiz" id="lstQ9OC"><input type="radio" name="q9" value="Kerberos"/> Kerberos</li>
+				</ol> 
+			</li>
+
+			<li id="Q10"> The process of transforming ciphertext to plaintext is known as:
+				<ol>
+				  <li class="lstQuiz" id="lstQ10OA"><input type="radio" name="q10" value="Decryption" required/> Decryption</li>
+				  <li class="lstQuiz" id="lstQ10OB"><input type="radio" name="q10" value="Encryption"/> Encryption</li>
+				  <li class="lstQuiz" id="lstQ10OC"><input type="radio" name="q10" value="Key recovery"/> Key recovery</li>
+				  <li class="lstQuiz" id="lstQ10OC"><input type="radio" name="q10" value="Hashing"/> Hashing</li>
+				</ol> 
+			</li>									
+			
+		</ol>
+		
+		<br>
+		<br>
+		<input type="hidden" id="quizId" value="mis_quiz"/>
+		
+		<input type="submit" id ="getScoreButton" class="submit" name="submit" value="Get Score" onclick="myFunction(); return false;"/>
+		<input type="reset" id="retryButton" class="submit" value="Clear Answers" onclick="resetForm();"/>
+		
+		<br/><br/><br/>
+		</form>
+		<div id="Result"></div>
+      </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

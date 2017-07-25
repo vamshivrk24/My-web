@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Resource Management Quiz</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+  
+  <script src="scripts/jquery-2.1.3.min.js" type ="text/javascript"></script>
+  <script src ="scripts/Quiz.js" type ="text/javascript"></script>
+  
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>		
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>
+      
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+		  <li class="tab_selected"><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+    
+
+      <div id="content">
+        <!-- insert the page content here -->
+        
+		<h1>Data Resource Management Quiz</h1>
+
+		<form name="quiz" id="formQuiz">
+		<ol type="1" id="lstQuestions">
+			<li id="Q1">
+				Which of the following is NOT an example issue of current enterprise data resource management
+				<ol>
+				  <li class="lstQuiz" id="lstQ1OA"><input type="radio" name="q1" value="The design, construction, and maintenance of a database." required/> The design, construction, and maintenance of a database.</li>
+				  <li class="lstQuiz" id="lstQ1OB"><input type="radio" name="q1" value="Consolidation of business intelligence (BI) and enterprise content management" /> Consolidation of business intelligence (BI) and enterprise content management</li>
+				  <li class="lstQuiz" id="lstQ1OC"><input type="radio" name="q1" value="The impact of business merger and acquisition activity on enterprise data management" /> The impact of business merger and acquisition activity on enterprise data management</li>
+				  <li class="lstQuiz" id="lstQ1OC"><input type="radio" name="q1" value="The impact of software vendors consolidate" /> The impact of software vendors consolidate</li>
+				</ol>
+			</li>
+			
+			<li id="Q2"> Which of the following is NOT a component in Data Resource Management
+				<ol>
+				  <li class="lstQuiz" id="lstQ2OA"><input type="radio" name="q2" value="Business value" required/> Business value</li>
+				  <li class="lstQuiz" id="lstQ2OB"><input type="radio" name="q2" value="Information Governance"/> Information Governance</li>
+				  <li class="lstQuiz" id="lstQ2OC"><input type="radio" name="q2" value="Simplification of infrastructure"/> Simplification of infrastructure</li>
+				  <li class="lstQuiz" id="lstQ2OC"><input type="radio" name="q2" value="None of the above"/> None of the above</li>
+				</ol>
+			</li>
+			
+			<li id="Q3"> Which of the following statement about database VIEW is correct
+
+				<ol >
+				  <li class="lstQuiz" id="lstQ3OA"><input type="radio" name="q3" value="A database view is a logical or virtual table based on a query." required/> A database view is a logical or virtual table based on a query.</li>
+				  <li class="lstQuiz" id="lstQ3OB"><input type="radio" name="q3" value="From a database user’s point, a view can be queried, deleted, updated and dropped." /> From a database user’s point, a view can be queried, deleted, updated and dropped.</li>
+				  <li class="lstQuiz" id="lstQ3OC"><input type="radio" name="q3" value="The actual data from a view is not stored as part of the database."/> The actual data from a view is not stored as part of the database.</li>
+				  <li class="lstQuiz" id="lstQ3OC"><input type="radio" name="q3" value="All of the above"/> All of the above</li>
+				</ol>
+			</li>
+			
+			<li id="Q4"> Which of the following statement is NOT TRUE about a synonym
+				<ol>
+				  <li class="lstQuiz" id="lstQ4OA"><input type="radio" name="q4" value=" A synonym is an alternative name for database objects such as tables, views, sequences, and stored procedures." required/>   A synonym is an alternative name for database objects such as tables, views, sequences, and stored procedures.</li>
+				  <li class="lstQuiz" id="lstQ4OB"><input type="radio" name="q4" value="Synonyms provide both data independence and location transparency"/> Synonyms provide both data independence and location transparency</li>
+				  <li class="lstQuiz" id="lstQ4OC"><input type="radio" name="q4" value="A public synonym can be accessed by any database users."/> A public synonym can be accessed by any database users.</li>
+				  <li class="lstQuiz" id="lstQ4OC"><input type="radio" name="q4" value="you can insert, update, and delete data in the underlying base table(s) through a synonym"/> you can insert, update, and delete data in the underlying base table(s) through a synonym </li>
+				</ol> 
+			</li>
+
+			<li id="Q5"> Which of the following description about SQL*Plus is correct
+				<ol>
+				  <li class="lstQuiz" id="lstQ5OA"><input type="radio" name="q5" value="A web based user interface" required/>  A web based user interface</li>
+				  <li class="lstQuiz" id="lstQ5OB"><input type="radio" name="q5" value="A DOS-based user interface"/> A DOS-based user interface</li>
+				  <li class="lstQuiz" id="lstQ5OC"><input type="radio" name="q5" value="You have to input “HOST STRING” information when you log in."/> You have to input “HOST STRING” information when you log in.</li>
+				  <li class="lstQuiz" id="lstQ5OC"><input type="radio" name="q5" value="You can configure interface settings through Preferences "/> You can configure interface settings through Preferences </li>
+				</ol> 
+			</li>
+			
+			<li id="Q6"> In the class, the tool demonstrated and used to debug PL/SQL applications is _________
+				<ol>
+				  <li class="lstQuiz" id="lstQ6OA"><input type="radio" name="q6" value="SQL*Plus" required/>  SQL*Plus</li>
+				  <li class="lstQuiz" id="lstQ6OB"><input type="radio" name="q6" value="Oracle SQL Developer"/> Oracle SQL Developer</li>
+				  <li class="lstQuiz" id="lstQ6OC"><input type="radio" name="q6" value="Oracle Enterprise manager"/> Oracle Enterprise manager</li>
+				  <li class="lstQuiz" id="lstQ6OC"><input type="radio" name="q6" value="A and C"/> A and C</li>
+				</ol> 
+			</li>			
+
+			<li id="Q7"> Which of the following statement is TRUE about stored procedure?
+				<ol>
+				  <li class="lstQuiz" id="lstQ7OA"><input type="radio" name="q7" value="To create and use a stored procedure, the user should have necessary system privileges" required/> To create and use a stored procedure, the user should have necessary system privileges</li>
+				  <li class="lstQuiz" id="lstQ7OB"><input type="radio" name="q7" value="stored procedures reduce network traffic and improve performance."/> stored procedures reduce network traffic and improve performance.</li>
+				  <li class="lstQuiz" id="lstQ7OC"><input type="radio" name="q7" value="stored procedures can be used to help ensure the integrity of the database."/>  stored procedures can be used to help ensure the integrity of the database.</li>
+				  <li class="lstQuiz" id="lstQ7OC"><input type="radio" name="q7" value="All of the above"/> All of the above</li>
+				</ol> 
+			</li>
+
+			<li id="Q8"> Which of the following statement is NOT TRUE about a cursor?
+				<ol>
+				  <li class="lstQuiz" id="lstQ8OA"><input type="radio" name="q8" value="A cursor is a pointer to a memory location on the database server" required/>  A cursor is a pointer to a memory location on the database server</li>
+				  <li class="lstQuiz" id="lstQ8OB"><input type="radio" name="q8" value="In PL/SQL programs, you can use cursors to retrieve and manipulate data."/> In PL/SQL programs, you can use cursors to retrieve and manipulate data.</li>
+				  <li class="lstQuiz" id="lstQ8OC"><input type="radio" name="q8" value="There are two types of cursors: implicit and explicit."/> There are two types of cursors: implicit and explicit.</li>
+				  <li class="lstQuiz" id="lstQ8OC"><input type="radio" name="q8" value="It is used to retrieve data into multiple records from a PL/SQL program."/> It is used to retrieve data into multiple records from a PL/SQL program.</li>
+				</ol> 
+			</li>
+			
+		</ol>
+		
+		<br>
+		<br>
+		<input type="hidden" id="quizId" value="drm_quiz"/>
+		
+		<input type="submit" id ="getScoreButton" class="submit" name="submit" value="Get Score" onclick="myFunction(); return false;"/>
+		<input type="reset" id="retryButton" class="submit" value="Clear Answers" onclick="resetForm();"/>
+		
+		<br/><br/><br/>
+		</form>
+		<div id="Result"></div>
+      </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

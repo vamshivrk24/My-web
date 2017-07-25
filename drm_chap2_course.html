@@ -1,0 +1,82 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Resource Management - Course</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li class="tab_selected"><a href="courses.html" >Courses</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Data Resource Management:</h1>
+       	<h1>CHAPTER 2</h1>
+		<h2><b>ADVANCED DATABASE OBJECTS</b></h2>
+
+      <p>
+		<ul><dl><dt><b>VIEWS - VIRTUAL TABLES</b></dt><br>
+		<li>	A view is a virtual table based on a SELECT query</li>
+				Syntax:  Create VIEW name AS SELECT query </li></dl></ul>
+
+
+	<ul><dl><dt><b>UPDATABLE VIEW</b></dt><br>
+		<li>Criterion to determine if a VIEW can update a base table:</li>
+		<li>In the view's output, if the primary key columns of the base table still have unique values, the base table is updatable. Use the syntax below.</li>
+		Syntax :<br>
+		SELECT COLUMN_NAME, UPDATABLE, INSERTABLE, DELETABLE
+		FROM USER_UPDATABLE_COLUMNS WHERE TABLE_NAME = 'PSVUPD';</dl></ul>
+
+
+		<ul><dl><dt><b>SYNONYMS </b></dt><br>
+		<li>	An alternative name for objects such as tables, views, sequences, and stored procedures. To create a synonym, the user needs to have the CREATE SYNONYM privilege.</li>
+		<li>Public and Private</li>
+		Syntax :      CREATE [public] SYNONYM [schema].synonym_name  FOR [schema].object_name</dl></ul>
+
+
+		<ul><dl><dt><b>SEQUENCES </b></dt><br>
+		<li>Generally used to create unique, sequential integer values that are used as primary key values in database tables.</li>
+		Syntax :        CREATE SEQUENCE [schema].sequence_name</dl></ul>
+
+
+		<ul><dl><dt><b>INDEXES</b></dt><br>
+		<li>	To improve data retrieval speed, Stores a map of column values and the ROWIDs of matching table rows.</li>
+		<li>B-tree index, Bitmap index, Function-based index , Partitioned index</li>
+		Syntax :      CREATE INDEX index_name   ON table_name (column1, column2, . column_n)<br>
+		[COMPUTE STATISTICS];
+
+
+	  <br><br><br></p>
+
+	  <a href ="drm_course.html"><input type="button" class="submit" name="submit" value="Back to Chapters" /></a>
+	  </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

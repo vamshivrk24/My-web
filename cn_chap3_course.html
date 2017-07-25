@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Computer Network Management - Course</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>		
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>        
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li class="tab_selected"><a href="courses.html" >Courses</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Computer Network Management:</h1>
+       	<h1>Chapter 3</h1>
+		<h2>TCP/IP</h2>
+
+      <p><br><br>
+	•	The <b>TCP/IP model</b> explains how the protocol suite works to provide communications<br>
+		It has Four layers: Application, Transport, Internetwork, and Network Interface<br>
+		<p><img src="images/TCP_IP.gif" title="TCP/IP Model"></p>
+	•	Application Layer:<br>
+		-File Transfer Protocol (FTP)<br>
+		-Trivial File Transfer Protocol (TFTP)<br>
+		-Network File System (NFS)<br>
+		-Simple Mail Transfer Protocol (SMTP)<br>
+		-Terminal emulation protocol (telnet)<br>
+		-Remote login application (rlogin)<br>
+		-Simple Network Management Protocol (SNMP)<br>
+		-Domain Name System (DNS)<br>
+		-Hypertext Transfer Protocol (HTTP)<br><br>
+	•	Transport Layer:<br>
+		Performs end-to-end packet delivery, reliability, and flow control<br>
+		Protocols:<br>
+		-TCP provides reliable, connection-oriented communications between two hosts<br>
+		-Requires more network overhead<br>
+		-UDP provides connectionless datagram services between two hosts<br>
+		-Faster but less reliable<br>
+		-Reliability is left to the Application layer<br>
+		Ports:<br>
+		-TCP and UDP use port numbers for communications between hosts<br>
+		-Port numbers are divided into three ranges:<br>
+		-Well Known Ports are those from 1 through 1,023<br>
+		-Registered Ports are those from 1,024 through 49,151<br>
+		-Dynamic/Private Ports are those from 49,152 through 65,535<br>
+		TCP sliding windows:<br>
+		-Control the flow and efficiency of communication<br>
+		-Also known as windowing<br>
+		-A method of controlling packet flow between hosts<br>
+		-Allows multiple packets to be sent and affirmed with a single acknowledgement packet<br>
+		-The size of the TCP window determines the number of acknowledgements sent for a given data transfer<br>
+		-Networks that perform large data transfers should use large window sizes<br><br>
+	•	Internetwork Layer:<br>
+		Four main protocols function at this layer<br>
+		-Internet Protocol (IP)<br>
+		-Internet Control Message Protocol (ICMP)<br>
+		-Address Resolution Protocol (ARP)<br>
+		-Reverse Address Resolution Protocol (RARP)<br>
+		ARP:<br>
+		A routed protocol<br>
+		Maps IP addresses to MAC addresses<br>
+		ARP tables contain the MAC and IP addresses of other devices on the network<br>
+		Reverse Address Resolution Protocol (RARP):<br>
+		Similar to ARP<br>
+		Used primarily by diskless workstations<br>
+		Which have MAC addresses burned into their network cards but no IP addresses<br>
+		Client’s IP configuration is stored on a RARP server<br><br>
+	•	Network Interface Layer:<br>
+		-Plays the same role as the Data Link and Physical layers of the OSI model<br>
+		-The MAC address, network card drivers, and specific interfaces for the network card function at this level<br>
+		-No specific IP functions exist at this layer<br>
+		-Because the layer’s focus is on communication with the network card and other networking hardware<br><br>
+	•	The Cisco Three-Layer Hierarchical Model:<br>
+		Does not describe how communications take place<br>
+		Focuses on how best to design a network<br>
+		Especially a relatively large network or one that is expected to grow<br>
+		Each layer of the model is involved in specific functions<br>
+		Is typically defined by a particular type of device<br>
+		The three layers of the model from bottom up are Access, Distribution, and Core<br><br>
+		<p><img src="images/cisc.jpg" title="Cisco three tier architecture"/></p>
+
+	
+	  <br><br><br></p>
+	  <a href ="cn_course.html"><input type="button" class="submit" name="submit" value="Back to Chapters" /></a>
+	  </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

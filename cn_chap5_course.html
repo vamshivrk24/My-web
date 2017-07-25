@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Computer Network Management - Course</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>		
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>        
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li class="tab_selected"><a href="courses.html" >Courses</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Computer Network Management:</h1>
+       	<h1>Chapter 5</h1>
+		<h2>Routers and IOS basics</h2>
+
+      <p><br><br>
+	
+	•	Benefits of Routing<br>
+		<p>One of the main benefits of using a router is that it filters traffic. When a device sends a packet on the local segment, all other devices on that segment must receive or discard the packet. Bridges can segment the network at the Data Link layer, but broadcast traffic from one segment to another must still pass through the bridge because the bridge cannot distinguish addresses above layer 2. In a large network composed of one large segment, this broadcast traffic could seriously affect performance. Routers solve the problem by filtering traffic and forwarding only packets that are addressed to hosts on other networks. In this way, routers reduce traffic by segmenting the network and filtering broadcasts. Said another way, routers create collision domains as well as broadcast domains.<br>
+		When network administrators add routers to a network, they must configure them to operate within the network. To perform routine maintenance and troubleshooting, network operators and administrators must be able to check the status of the router and its components. This necessary interaction with the router requires an interface through which the routers can be configured.</p>
+	•	Cisco Router User Interface<br>
+		<p>Network administrators commonly configure and interact with a Cisco router via the Cisco Internetwork Operating System (IOS). The Cisco IOS provides a command-line interface (CLI), which allows network operators to check the status of the router and network administrators to manage and configure the router. The software that interprets the commands is called the command executive, or EXEC.<br>
+		You can access a router in several different ways; each method involves access through one of three lines. Network administrators typically access the router directly through the console port (also known as the console) located on the back of the router. The console port connects directly to a PC through an RJ-45 to RJ-45 rollover cable with an RJ-45 to DB-9 connector included with the router. The second line used to access the router is through the auxiliary port (AUX), which is also on the back of the router. The auxiliary port allows a remote administrator to dial into the router through an external modem, which gets attached to the auxiliary port. The remote PC must also have a modem to use this method.</p>
+	•	Connecting via Terminal Programs<br>
+		<p>When configuring the router through the console or AUX ports, you must first make the physical connection. Then, you can access the router through a terminal program. Many different terminal programs are available for this purpose, including HyperTerminal, MicroPhone Pro, ProComm Plus, Telix, Teraterm, and Terminal on Microsoft DOS and Windows systems; Kermit and Tip on Sun Workstations; Z-terminal on Apple Macintosh computers; and Minicom on Linux systems.</p>
+		<p>You can use the following steps to configure HyperTerminal:<br>
+		1. Open the HyperTerminal application. You may be prompted to make HyperTerminal your default telnet program. Click Yes. In Microsoft Windows XP and Windows 2000, you should find HyperTerminal in the All Programs/Accessories/Communications group in the Start menu. If you cannot find HyperTerminal, you may have to install additional Accessories programs from the Add/Remove Programs icon in the Control Panel of your Microsoft Windows system. In Microsoft Windows XP, click Start and navigate to All Programs, Accessories, Communications, and HyperTerminal.<br>
+		2. You may be prompted for location information. In this case you are not using a phone or modem connection, so click Cancel, then click Yes, and then click OK. If the New Connection Wizard does not appear automatically, click File on the menu bar, and then click New Connection.<br>
+		3. Enter a name for the connection. The name is for user reference only, so you can use any name that describes the connection. Click OK to continue.<br>
+		4. You must then configure how you will connect to the router via the Connect To dialog box (you may be prompted to install a modem). You will see a field to enter a phone number. If you are connecting to the router through the AUX port, you would provide the router phone number here. If connecting to the router through the console port, click the “Connect using” list box and choose the COM port to which the RJ-45 to DB-9 connector is attached. Click OK to continue.<br>
+		5. Configure the following settings for the COM port: Bits per second, 9600; Data bits, 8; Parity, None; Stop bits, 1; Flow control, None. Click OK to complete the configuration. Click File on the menu bar, and then click Properties. Under Settings, make sure the keys are set to act as “Terminal” keys.<br>
+		When the HyperTerminal configuration is complete, the program will attempt to connect to the router. At this point, you would turn on the router. On the screen, you should then see the router boot routine. Sometimes it is necessary to press Enter a few times to get a response from the router.</p>
+	•	User Interface<br>
+		<p>When the router completes its initialization process, you must press the Enter key to reach the prompt. The initial prompt consists of two parts: the host name of the router followed by the greater than symbol (>). By default, the router’s host name is router, so the default prompt is router>.<br>
+		When the prompt displayed is the greater than symbol, the router is in user EXEC mode (or user mode). In this mode the network operator can check router status to see if the interfaces are operational, and review several of the router settings. From any prompt, you can see a list of possible commands at that prompt by typing a question mark (?), as shown in You do not need to press Enter after typing the question mark.<br>
+		User mode does not allow you to configure the router. To do this, you must go into the privileged EXEC mode. To enter privileged EXEC, you can type the enable command at the user mode prompt. Next, you may be prompted for a password. If an enable password has been configured, you must enter it. As you type, the password will not be displayed on the terminal screen. If an enable secret password has been configured, then you will type the enable secret password. After you enter the enable password or the enable secret password, the greater than symbol (>) changes to a pound sign (#) to indicate that you are in privileged EXEC mode (router#). Most router configuration takes place in router modes beyond privileged EXEC mode; however, you can do a few things at this prompt to substantially affect router operations:<br>
+		• Setup—The setup command will cause the router to enter the system configuration dialog, which allows the router to be completely reconfigured.<br>
+		• Copy—Configurations can be copied from TFTP servers to the router and therefore change the router configuration.<br>
+		• Erase—Configuration files as well as the entire IOS can be erased.</p>
+	•	Interfaces<br>
+		<p>A router can ship with a variety of configurable interfaces. A common interface is Ethernet0, which is used to connect the router to an Ethernet LAN. Although this chapter focuses on the Ethernet, serial, console, and auxiliary interfaces, the router can have other types of interfaces, including:<br>
+		• Token Ring<br>
+		• Basic Rate Interface (BRI)<br>
+		• Asynchronous Transfer Mode (ATM)<br>
+		• Fiber Distributed Data Interface (FDDI)<br>
+		• Channel Interface Processor (CIP) for Systems Network Architecture (SNA)<br>
+		• High-Speed Serial Interface (HSSI)</p>
+	
+	
+	
+	  <br><br><br></p>
+	  <a href ="cn_course.html"><input type="button" class="submit" name="submit" value="Back to Chapters" /></a>
+	  </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>

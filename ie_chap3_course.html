@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Internet for the Enterprise - Course</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="shortcut icon" href="style/sl.png">
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div class="logoIcons"><a href ="https://mycentral.ucmo.edu/" target="_blank"><img src="style/myc.gif" class="mcIcon"></a></div>
+		<div class="logoIcons"><a href ="https://ucmo.blackboard.com/" target="_blank"><img src="style/bb.png" class="bbIcon"></a></div>
+		<div class="logoIcons"><a href ="http://mail.ucmo.edu/" target="_blank"><img src="style/gmail.png"  class="gmailIcon"></a></div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="home.html">Home</a></li>
+          <li class="tab_selected"><a href="courses.html" >Courses</a></li>
+		  <li><a href="quiz.html">Quiz</a></li>
+		  <li><a href="faculty_info.html">Faculty Information</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div> <!-- header div ends here -->
+    <div id="site_content" >
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Internet for the Enterprise</h1>
+       	<h1>Chapter 3</h1>
+		<h2>Introduction to HTML 5: Part 2</h2>
+
+      <p><br><br>
+		<p>We now continue our presentation of HTML5 by discussing various new features, including:<br>
+		• newinput element types for colors, dates, times, e-mail addresses, numbers, ranges of integer values, telephone numbers, URLs, search queries, months and weeks-browsers that don't support these input types simply render them as standard text input elements.<br>
+		• autocompletion capabilities that help users quickly re-enter text that they've previously entered in a form<br>
+		• datalists for providing lists of allowed values that a user can enter in an input element and for autocompleting those values as the user types<br>
+		• page-structure elements that enable you to delineate and give meaning to the parts of a page, such as headers, navigation areas, footers, sections, articles, asides, summaries/details, figures, figure captions and more.<br>
+		Support for the features presented in this chapter varies among browsers, so for our sample outputs we've used several browsers. We'll discuss many more new HTML5 features throughout the remaining chapters.</p><br>
+		input Type color<br>
+		<p>The color input type enables the user to enter a color. At the time of this writing, most browsers render the color input type as a text field in which the user can enter a hexadecamal code or a color name. In the future, when you click a color input browsers will likely display a color picker similar to the Microsoft Windows color dialog</p>
+		<p><img src="images/ColorPicker.png" title="Color Picker"/></p>
+		<p>Validation<br>
+		Traditionally it's been difficult to validate user input, such as ensuring that an e-mail address, URL, date or time is entered in the proper format. The newHTML 5 input types are self validating on the client side, eliminating the need to add complicated JavaScript code to your web pages to validate user input, reducing the amount of invalid data submitted and consequently reducing Internet traffic between the server and the client to correct invalid input. <i>The server should still validate all user input.</i></p><br>
+		<p>input Type date<br>
+		The date input type enables the user to enter a date in the form yyyy-mm-dd. Firefox and Internet Explorer display a text field in which a user can enter a date such as 2012-01-27. Chrome and Safari display a spinner control-a text field with an up-down arrow ( ) on the right side-allowing the user to select a date by-clicking the up or down arrow. The start date is the current date. Opera displays a calendar from which you can choose a date. In the future, when the user clicks a date input, browsers are likely to display a date control similar to the Microsoft Windows</p><br>
+		<p>input Type email<br>
+		The email input type enables the user to enter an e-mail address or a list of e-mail addresses separated by commas (if the multiple attribute is specified). Currently, all of the browsers display a text field. If the user enters an invalid e-mail address (i.e., the text entered is not in the proper format) and clicks the Submit button, a callout asking the user to enter an e-mail address is rendered pointing to the input element. HTML5 does not check whether an e-mail address entered by the user actually exists- rather it just validates that the e-mail address is in the proper format.<p><br>
+		<p>placeholder Attribute<br>
+		The placeholder attribute allows you to place temporary text in a text field. Generally, placeholder text is light gray and provides an example of the text and/or text format the user should enter. When the focus is placed in the text field (i.e., the cursor is in the text field), the placeholder text disappears-it's not "submitted" when the user clicks the Submit button (unless the user types the same text).</p><br>
+		<p>required Attribute<br>
+		The required attribute forces the user to enter a value before submitting the form. You can add required to any of the input types. In this example, the user must enter an e-mail address and a telephone number before being able to submit the form. For example, if the user fails to enter an e-mail address and clicks the Submit button, a callout pointing to the empty element appears, asking the user to enter the information.</p><br>
+		<p>input Type number<br>
+		The number input type enables the user to enter a numerical value-mobile browsers typically display a numeric keypad for this input type. Internet Explorer, Firefox and Safari display a text field in which the user can enter a number. Chrome andOpera render a spinner control for adjusting the number. The min attribute sets the minimum valid number, in this case "0". The max attribute sets the maximum valid number, which we set to "7".</p><br>
+		<p>datalist Element<br>
+		The datalist element provides input options for a text input element. At the time of this writing, datalist support varies by browser. In this example, we use a datalist element to obtain the user's birth month. Using Opera, when the user clicks in the text field, a drop-down list of the months of the year appears. If the user types "M" in the text field, the list on months is narrowed to March and May. When using Firefox, the drop-down list of months appears only after the user begins typing in the text field. If the user types "M", all months containing the letter "M" or "m" appear in the drop-down list- March, May, September, November and December.</p><br>
+		<p>nav Element<br>
+		The nav element groups navigation links. In this example, we used the heading Recent Publications and created a ul element with seven li elements that link to the corresponding web pages for each book.</p><br>
+	<p>figure Element and figcaption Element<br>
+	The figure element describes a figure (such as an image, chart or table) in the document so that it could be moved to the side of the page or to another page. The figure element does not include any styling, but you can style the element using CSS. The figcaption element provides a caption for the image in the figure element.</p><br>
+	<p>article Element<br>
+	The article element describes standalone content that could potentially be used or distributed elsewhere, such as a news article, forum post or blog entry. You can nest article elements. For example, you might have reader comments about a magazine nested as an article within the magazine article.</p><br>
+	<p>summary Element and details Element<br>
+	The summary element displays a right-pointing arrow next to a summary or caption when the document is rendered in a browser. When clicked, the arrow points downward and reveals the content in the details element.</p><br>
+	<p>section Element<br>
+	The section element describes a section of a document, usually with a heading for each section-these elements can be nested. For example, you could have a section element for a book, then nested sections for each chapter name in the book. In this example, we broke the document into three sections-the first is Recent Publications. The section element may also be nested in an article.</p><br>
+	<p>aside Element<br>
+	The aside element describes content that's related to the surrounding content (such as an article) but is somewhat separate from the flow of the text. For example, an aside in a news story might include some background history. A print advertisement might include an aside with product testimonials from users.</p><br>
+		
+		
+		
+		
+		
+	  <br><br><br></p>
+	  <a href ="ie_course.html"><input type="button" class="submit" name="submit" value="Back to Chapters" /></a>
+	  </div>
+    </div>
+    <div id="footer">Internet for the Enterprise - Curriculum Project</div>
+  </div>
+</body>
+</html>
